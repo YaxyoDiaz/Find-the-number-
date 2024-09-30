@@ -1,0 +1,105 @@
+* {
+   margin: 0;
+   padding: 0;
+   box-sizing: border-box;
+}
+
+/* Общие стили для страницы */
+body {
+   font-family: 'Arial', sans-serif;
+   background: linear-gradient(to right, #8360c3, #2ebf91);
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   height: 100vh;
+   margin: 0;
+   color: #fff;
+ }
+ 
+ /* Контейнер для игры */
+ .container {
+   background-color: rgba(255, 255, 255, 0.15);
+   padding: 40px;
+   border-radius: 15px;
+   box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+   text-align: center;
+   backdrop-filter: blur(10px);
+   width: 300px;
+ }
+ 
+ /* Заголовок */
+ h1 {
+   margin-bottom: 20px;
+   font-size: 28px;
+   letter-spacing: 1px;
+ }
+ 
+ /* Поле для ввода числа */
+ input[type="number"] {
+   padding: 12px 15px;
+   width: 150px;
+   margin-right: 10px;
+   border: 2px solid #fff;
+   border-radius: 5px;
+   background-color: rgba(255, 255, 255, 0.3);
+   color: #fff;
+   font-size: 16px;
+   outline: none;
+   transition: background-color 0.3s ease, border 0.3s ease;
+   margin: 20px 0 20px;
+ }
+ 
+ /* Изменение фона и рамки при фокусе на поле */
+ input[type="number"]:focus {
+   background-color: rgba(255, 255, 255, 0.5);
+   border-color: #2ebf91;
+ }
+ 
+ /* Кнопка "Угадать" */
+ button {
+   padding: 12px 20px;
+   font-size: 16px;
+   border: none;
+   border-radius: 5px;
+   background-color: #2ebf91;
+   color: #fff;
+   cursor: pointer;
+   transition: background-color 0.3s ease;
+ }
+ 
+ /* Изменение цвета кнопки при наведении */
+ button:hover {
+   background-color: #27a378;
+ }
+ 
+ /* Сообщение о результате */
+ #resultMessage {
+   margin-top: 20px;
+   font-size: 20px;
+   font-weight: bold;
+ }
+ 
+ /* Сообщение о количестве попыток */
+ #attemptsMessage {
+   margin-top: 10px;
+   font-size: 16px;
+   color: #ddd;
+   font-style: italic;
+ }
+ 
+ /* Анимация плавного появления текста */
+ #resultMessage,
+ #attemptsMessage {
+   animation: fadeIn 0.6s ease-in-out;
+ }
+ 
+ /* Анимация для плавного появления элементов */
+ @keyframes fadeIn {
+   0% {
+     opacity: 0;
+   }
+   100% {
+     opacity: 1;
+   }
+ }
+ 
